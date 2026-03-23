@@ -5,8 +5,8 @@ services:
     build: .
     container_name: webcont
     restart: unless-stopped
-    security_opt:
-      - no-new-privileges:true
+    #security_opt:
+    #  - no-new-privileges:true
     networks:
       - net
 
