@@ -5,8 +5,6 @@ services:
     build: .
     container_name: webcont
     restart: unless-stopped
-    #security_opt:
-    #  - no-new-privileges:true
     networks:
       - net
 
@@ -14,8 +12,6 @@ services:
     image: nginx:1.29.4-alpine-slim
     container_name: ngxcont
     restart: unless-stopped
-    security_opt:
-      - no-new-privileges:true
     ports:
       - "80:80"
       - "443:443"
